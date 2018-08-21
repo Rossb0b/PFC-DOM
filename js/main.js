@@ -23,54 +23,63 @@ function myFunction(element) {
 	if (element.id === "pierre") {
 		console.log("choix 1")
 		if (bot == 0) {
-			document.getElementById("return").innerHTML = "Egalité ! 👊👊";
+			document.getElementById("result").innerHTML = "Egalité !";
 			document.getElementById("continue").style.display = "block";
+			document.getElementById("return").innerHTML = "👊👊";
 		} else if (bot == 1) {
-			document.getElementById("return").innerHTML = "Tu as perdu ! 👊✋";
+			document.getElementById("result").innerHTML = "Tu as perdu !";
 			vieBot = vieBot +1;
 			document.getElementById("scoreBot").innerHTML = vieBot;
 			document.getElementById("continue").style.display = "block";
+			document.getElementById("return").innerHTML = "👊✋"
 		} else if (bot == 2) {
-			document.getElementById("return").innerHTML = "Tu as gagné ! 👊✌";
+			document.getElementById("result").innerHTML = "Tu as gagné !";
 			vieU = vieU +1;
 			document.getElementById("scoreU").innerHTML = vieU;
 			document.getElementById("continue").style.display = "block";
+			document.getElementById("return").innerHTML = "👊✌"
 		}
 	}
 
 	else if (element.id === "papier") {
 		console.log("choix 2")
 		if (bot == 0) {
-			document.getElementById("return").innerHTML = "Tu as gagné ! ✋👊";
+			document.getElementById("result").innerHTML = "Tu as gagné !";
 			vieU = vieU +1;
 			document.getElementById("scoreBot").innerHTML = vieBot;
 			document.getElementById("continue").style.display = "block";
+			document.getElementById("return").innerHTML ="✋👊"
 		} else if (bot == 1) {
-			document.getElementById("return").innerHTML = "Egalité ! ✋✋";
+			document.getElementById("result").innerHTML = "Egalité !";
 			document.getElementById("continue").style.display = "block";
+			document.getElementById("return").innerHTML = "✋✋"
 		} else if (bot == 2) {
-			document.getElementById("return").innerHTML = "Tu as perdu ! ✋✌";
+			document.getElementById("result").innerHTML = "Tu as perdu !";
 			vieBot = vieBot +1;
 			document.getElementById("scoreU").innerHTML = vieU;
 			document.getElementById("continue").style.display = "block";
+			document.getElementById("return").innerHTML = "✋✌"
 		}
 	} 
 
 	else {
 		console.log("choix 3");
 		if (bot == 0) {
-			document.getElementById("return").innerHTML = "Tu as perdu ! ✌👊";
+			document.getElementById("result").innerHTML = "Tu as perdu !";
 			vieBot = vieBot +1;
 			document.getElementById("scoreBot").innerHTML = vieBot;
 			document.getElementById("continue").style.display = "block";
+			document.getElementById("return").innerHTML = "✌👊"
 		} else if (bot == 1) {
-			document.getElementById("return").innerHTML = "Tu as gagné ! ✌✋";
+			document.getElementById("result").innerHTML = "Tu as gagné !";
 			vieU = vieU +1;
 			document.getElementById("scoreU").innerHTML = vieU;
 			document.getElementById("continue").style.display = "block";
+			document.getElementById("return").innerHTML = " ✌✋"
 		} else if (bot == 2) {
-			document.getElementById("return").innerHTML = "Egalité ! ✌✌";
+			document.getElementById("result").innerHTML = "Egalité !";
 			document.getElementById("continue").style.display = "block";
+			ocument.getElementById("return").innerHTML = "✌✌";
 		}
 	}
 	
@@ -93,7 +102,7 @@ var scoreU = document.getElementById("scoreU").innerHTML = vieU;
 var scoreBot = document.getElementById("scoreBot").innerHTML = vieBot;
 
 function continueOnClick() {
-	document.getElementById("return").innerHTML = "";
+	document.getElementById("result").innerHTML = "";
 	document.getElementById("continue").style.display = "none";
 	document.getElementById("return").innerHTML = "";
 }
@@ -108,20 +117,3 @@ document.getElementById('pseudoSub').addEventListener('click', function() {
     document.getElementById('pseudoPlayer').innerHTML = pseudoPlayer + " :";
     document.getElementById("pseudo").style.display = "none";
 });
-
-
-
-function returnMoveX() {
-    var elem = document.getElementById("return");
-    var pos = 0;
-    var id = setInterval(frame, 5);
-    function frame() {
-        if (pos == 350) {
-            clearInterval(id);
-        } else {
-            pos++;
-            elem.style.top = pos + 250;
-            elem.style.left = pos + 250;
-        }
-    }
-} 

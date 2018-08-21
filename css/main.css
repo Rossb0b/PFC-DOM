@@ -97,9 +97,21 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html, body {
+    margin:0;
+    padding:0;
+    width:100%;
+}
 
+body {
+    background-color:black;
+    color:white;
+}
 
-
+.game-choise {
+    height:80px;
+    width:auto;
+}
 
 
 

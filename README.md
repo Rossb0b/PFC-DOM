@@ -1,8 +1,8 @@
 <snippet>
   <content><![CDATA[
-# ${1:Project Name}
+# ${1:Pierre; feuille; ciseaux}
 
-TODO: "Yes We Web" project developed in solo. It's a production of a Shifumi
+"Yes We Web" project developed in solo. It's a production of a Shifumi
 Their is only one page to product :
 
 1. The game page.
@@ -25,7 +25,6 @@ Nicolas
 
 ## License
 
-TODO: Write license
 ]]></content>
   <tabTrigger>readme</tabTrigger>
 </snippet>

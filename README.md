@@ -24,7 +24,6 @@ TODO: Write history
 Nicolas
 
 ## License
-
-]]></content>
+</content>
   <tabTrigger>readme</tabTrigger>
 </snippet>
